@@ -25,11 +25,6 @@
     color: #969696;
 }
 
-.smallheader_text:hover {
-    color: white;
-    background-color: #1F1F1F;
-}
-
 .header_buttons {
     display: flex;
     gap: 2.5em;
@@ -133,16 +128,27 @@ body {
     width: 120px;
     height: 1px;
     background-color: white;
-    margin-top: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .twoblocks_cont {
     display: flex;
 }
 
-.biggerof2 {
+.biggerof2_tall {
     width: 55%;
     height: 730px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.biggerof2_small {
+    width: 55%;
+    height: 600px;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -162,13 +168,13 @@ body {
 
 .smallerof2_suit {
     width: 45%;
-    height: 730px;
+    height: 600px;
     background-image: url(suit.png);
+    background-position: center;
+    max-width: 880px;
 }
 
 .bigwords {
-    height: 39px;
-    width: 376px;
     font-family: Playfair Display;
     font-size: 36px;
     line-height: 42px;
@@ -177,10 +183,66 @@ body {
     color: white;
 }
 
+.watchcont_small {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.watchwtext {
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+}
+
+.watch_cont {
+    background-color: #191B1C;
+    width: 260px;
+    height: 325px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.watchtext_b {
+    font-family: Playfair Display;
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+    margin: 2em 1em 0.5em 1em;
+}
+
+.watchtext_s {
+    font-family: Playfair Display;
+    font-size: 16px;
+    line-height: 19px;
+    color: #D0D0D0;
+    margin:  0.5em 1em;
+}
+
 .newstock {
     width: 100%;
     height: 1289px;
     background-color: black;
+}
+
+.button_tr {
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border: 1px solid white;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    margin: 0px 10px;
+    width: 138px;
+    height: 47px;
+    margin-bottom: 100px;
 }
 
 .para_text {
@@ -192,4 +254,46 @@ body {
     line-height: 150%;
     text-align: center;
     width: 50%;
+}
+
+.our_brands {
+    width: 100%;
+    height: 362px;
+    background-color: #0F0F0F;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.brandsicons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.brandsicons > img {
+    margin: 3%;
+}
+
+.bigfooter {
+    width: 100%;
+    height: 400px;
+    background-image: url(bigfooter_bg.png);
+}
+
+.smallfooter {
+    width: 100%;
+    height: 50px;
+    background-color: #0F0F0F;
+}
+
+.figmatext {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: white;
 }
